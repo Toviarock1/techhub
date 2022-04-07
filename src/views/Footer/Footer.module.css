@@ -1,0 +1,32 @@
+.Footer {
+  background-color: #054814;
+}
+.NewsletterBtn {
+  background-color: #054814 !important;
+  border: 1px solid white !important;
+  border-radius: 0 !important;
+  margin-left: 14px !important;
+}
+.Footer div {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+}
+
+.FooterInput::placeholder {
+  color: white;
+}
+.FooterInput:focus {
+  color: white;
+  background-color: gray;
+}
+
+.FooterInput {
+  background-color: gray;
+  border-radius: 0;
+  border: 1px solid gray;
+  color: white;
+}

@@ -1,0 +1,17 @@
+.Title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 75px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.Description {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  color: #000000;
+}

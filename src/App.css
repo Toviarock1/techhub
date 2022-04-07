@@ -1,0 +1,31 @@
+* {
+  /* border: 0.5px solid red; */
+}
+
+body {
+  /* background: black; */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+}
+
+.PrimaryBtn {
+  display: flex !important;
+  align-items: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  background: #054814;
+}
+
+.FormBtn {
+  background-color: #054814 !important;
+  border: 1px solid white !important;
+  border-radius: 0 !important;
+}

@@ -1,0 +1,45 @@
+.BackgroundBg {
+  background-image: url("./../../assets/svgs/image\ 4.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.OurVisionCard h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.OurVisionCard p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 129.9%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.OurMissionCard {
+  margin-top: -2.5rem;
+}
+.OurMissionCard p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 129.9%;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.OurMissionCard h2 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}

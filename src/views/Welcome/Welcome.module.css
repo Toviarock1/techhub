@@ -1,0 +1,19 @@
+.WelcomeTitle {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+.WelcomeDescription {
+  width: 426px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
