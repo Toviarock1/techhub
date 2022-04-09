@@ -1,13 +1,14 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 //react-boostrap
-import { Button, Col, Container, Form, Row, Spinner } from 'react-bootstrap'
+import { Button, Col, Container, Form, Modal, Row, Spinner } from 'react-bootstrap'
 import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
 import classes from './ContactUs.module.css';
 
 const ContactUs = () => {
     const [validated, setValidated] = useState(false);
     const [loading, setLoading] = useState(false);
+    const [showModal, setShowModal] = useState(false);
     const [contactForm, setContactForm] = useState({
         name: '',
         email: '',
@@ -33,6 +34,7 @@ const ContactUs = () => {
                 message: contactForm.message
             }).then(res => {
                 console.log(res);
+                setShowModal(true);
                 setLoading(false);
             }).catch(err => {
                 setLoading(false);
@@ -40,6 +42,9 @@ const ContactUs = () => {
             })
         }
     };
+
+    const closeModal = () => setShowModal(false);
+
     return (
         <div className='px-20 py-44'>
             <Container fluid>
@@ -111,6 +116,17 @@ const ContactUs = () => {
                     </Col>
                 </Row>
             </Container>
+            <Modal show={showModal} onHide={closeModal}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Thank you!</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>We've received your message and will get back to you within 24 hours. <br /> In the meantime, make sure to <a className='no-underline text-green-500' href="#">follow us on twitter</a> <br /></Modal.Body>
+                <Modal.Footer>
+                    <Button className={classes.ModalBtn} variant="secondary" onClick={closeModal}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     )
 }
