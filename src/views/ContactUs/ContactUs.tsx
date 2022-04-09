@@ -24,6 +24,7 @@ const ContactUs = () => {
         event.preventDefault();
         setValidated(true);
         if (form.checkValidity() === true) {
+            setLoading(true);
             console.log(contactForm);
             axios.post('https://formsubmit.co/ajax/boiuattechhub@gmail.com', {
                 name: contactForm.name,
@@ -62,8 +63,8 @@ const ContactUs = () => {
                                 <Form.Control as="textarea" rows={7} onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })} required />
                             </Form.Group>
 
-                            <Button variant="primary" type="submit" className="FormBtn">
-                                {loading ? <Spinner className='mx-4' animation="border" variant="warning" /> : "Submit"}
+                            <Button disabled={loading} variant="primary" type="submit" className="FormBtn">
+                                {loading ? <Spinner className='mx-3' animation="border" variant="warning" /> : "Submit"}
                             </Button>
                         </Form>
                     </Col>
