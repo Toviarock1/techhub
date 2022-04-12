@@ -26,13 +26,13 @@ const Header: React.FC<HeaderProps> = ({ navLinkWhite }) => {
     });
 
     return (
-        <Navbar className={`${navbar ? (navLinkWhite ? classes.AboutNavbarScroll : classes.NavbarScroll) : classes.Navbar} px-11 h-14`} fixed='top' collapseOnSelect expand="lg" variant="dark">
-            <Container fluid>
+        <Navbar className={`${navbar ? (navLinkWhite ? classes.AboutNavbarScroll : classes.NavbarScroll) : classes.Navbar} md:px-11 h-14`} fixed='top' collapseOnSelect expand="lg" variant="dark">
+            <Container className={classes.NavbarContainer} fluid>
                 <Navbar.Brand href="#home">
-                    <img src={navLinkWhite ? Logo2 : Logo} className="w-52" alt="The BOI-UAT incubation center Logo" />
+                    <img src={navLinkWhite ? Logo2 : Logo} className={`${classes.HeaderLogo} w-52`} alt="The BOI-UAT incubation center Logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+                <Navbar.Collapse id="responsive-navbar-nav" className={`${classes.NavbarCollapse}`}>
                     <Nav className="ms-auto flex items-center">
                         <Nav.Link className={navLinkWhite ? classes.NavLinkWhite : classes.NavLink} href="/">Home</Nav.Link>
                         <Nav.Link className={navLinkWhite ? classes.NavLinkWhite : classes.NavLink} href="about">About</Nav.Link>

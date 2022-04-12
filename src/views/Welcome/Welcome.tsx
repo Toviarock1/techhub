@@ -10,7 +10,7 @@ const Welcome = () => {
       <Container fluid>
         <div>
           <Row>
-            <Col className='flex justify-center'>
+            <Col xs={12} sm={6} className='flex justify-center'>
               <img src={WelcomeImage} alt="Tech hub working space" />
             </Col>
             <Col>

@@ -35,3 +35,22 @@
   background-color: #054814;
   transition: all 0.3s linear;
 }
+
+@media screen and (max-width: 640px) {
+  .NavbarCollapse{
+    background: white;
+    margin-top: -1px;
+  } 
+  .NavbarContainer{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+  .NavbarScroll {
+    height: 88px;
+    background-color:  #054814 !important;
+    transition: all 0.3s linear;
+  }
+  .HeaderLogo{
+    width: 9rem;
+  }
+}

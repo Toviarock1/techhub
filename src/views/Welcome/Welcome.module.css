@@ -17,3 +17,14 @@
   letter-spacing: 0.04em;
   color: #000000;
 }
+
+@media screen and (max-width: 640px) {
+  .WelcomeTitle {
+    font-size: 20px;
+    line-height: 33px;
+  }
+  .WelcomeDescription {
+    width: auto;
+    font-size: 16px;
+  }
+}
