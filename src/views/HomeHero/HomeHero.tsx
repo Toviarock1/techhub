@@ -4,7 +4,7 @@ import classes from './HomeHero.module.css';
 
 const HomeHero = () => {
     return (
-        <div className={`${classes.BackgroundBg} h-120 px-20 pt-44`}>
+        <div className={`${classes.BackgroundBg} h-120 md:px-20 pt-60 md:pt-44`}>
             <Container fluid>
                 <div className='text-black'>
                     <h1 className={classes.HeroTitle}>BOI-UAT <br />

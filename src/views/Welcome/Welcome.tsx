@@ -6,7 +6,7 @@ import classes from './Welcome.module.css';
 
 const Welcome = () => {
   return (
-    <div className='bg-white px-20 py-32 pb-48'>
+    <div className='bg-white md:px-20 py-32 pb-48'>
       <Container fluid>
         <div>
           <Row>
