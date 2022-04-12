@@ -10,7 +10,8 @@ const Welcome = () => {
       <Container fluid>
         <div>
           <Row>
-            <Col xs={12} sm={6} className='flex justify-center'>
+            <Col xs={12} sm={6}>
+              <h2 className={classes.MobileWelcomeTitle}>Welcome to BOI-UAT Incubation Hub. </h2>
               <img src={WelcomeImage} alt="Tech hub working space" />
             </Col>
             <Col>

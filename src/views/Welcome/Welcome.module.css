@@ -18,6 +18,17 @@
   color: #000000;
 }
 
+.MobileWelcomeTitle {
+  display: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
 @media screen and (max-width: 640px) {
   .WelcomeTitle {
     font-size: 20px;
@@ -26,5 +37,14 @@
   .WelcomeDescription {
     width: auto;
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .MobileWelcomeTitle {
+    display: block;
+  }
+  .WelcomeTitle {
+    display: none;
   }
 }
