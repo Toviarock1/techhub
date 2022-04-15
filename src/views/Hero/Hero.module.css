@@ -24,3 +24,10 @@
   color: #000000;
   margin-top: 30px;
 }
+
+/* media queries */
+@media screen and (max-width: 640px) {
+  .HeroTitle {
+    color:red !important;
+  }
+}
