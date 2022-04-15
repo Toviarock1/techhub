@@ -6,11 +6,12 @@ import classes from './Welcome.module.css';
 
 const Welcome = () => {
   return (
-    <div className='bg-white px-20 py-32 pb-48'>
+    <div className='bg-white md:px-20 py-32 pb-48'>
       <Container fluid>
         <div>
           <Row>
-            <Col className='flex justify-center'>
+            <Col xs={12} sm={6}>
+              <h2 className={classes.MobileWelcomeTitle}>Welcome to BOI-UAT Incubation Hub. </h2>
               <img src={WelcomeImage} alt="Tech hub working space" />
             </Col>
             <Col>

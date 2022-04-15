@@ -62,8 +62,14 @@ const Footer = () => {
                                                     Subcribe to our newsletter:
                                                 </Form.Label>
                                                 <div className='flex'>
-                                                    <Form.Control className={`${classes.FooterInput}`} type="email" placeholder='Your Email' />
-                                                    <Button className={classes.NewsletterBtn}>Subcribe</Button>
+                                                    <Row>
+                                                        <Col sm={8}>
+                                                            <Form.Control className={`${classes.FooterInput}`} type="email" placeholder='Your Email' />
+                                                        </Col>
+                                                        <Col xs={4}>
+                                                            <Button className={classes.NewsletterBtn}>Subcribe</Button>
+                                                        </Col>
+                                                    </Row>
                                                 </div>
 
                                             </Form.Group>
@@ -77,10 +83,10 @@ const Footer = () => {
             </div>
             <div className='px-20 mt-4'>
                 <Row>
-                    <Col>
+                    <Col xs={12} sm={6}>
                         <p className='text-white text-xs'>&copy; BOI-UAT hub | All Rights Reserved</p>
                     </Col>
-                    <Col>
+                    <Col xs={12} sm={6}>
                         <div className='flex justify-end'>
                             <div className='flex'>
                                 <div className='px-2'>
