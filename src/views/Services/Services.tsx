@@ -21,32 +21,32 @@ const Services = () => {
                             <div className='flex justify-center'>
                                 <img src={TrainingImage} alt="" />
                             </div>
-                            <div>
-                                <p className={classes.TrainingTitle}>TRAINING</p>
+                            <div className='mt-9 text-center'>
+                                <a href='#' className={classes.TrainingTitle}>TRAINING</a>
                             </div>
                         </Col>
                         <Col>
                             <div className='flex justify-center'>
                                 <img src={CoWorkingSpaceImage} alt="" />
                             </div>
-                            <div>
-                                <p className={classes.TrainingTitle}>CO-WORKING</p>
+                            <div className='mt-9 text-center'>
+                                <a href='#' className={classes.TrainingTitle}>CO-WORKING</a>
                             </div>
                         </Col>
                         <Col>
                             <div className='flex justify-center'>
                                 <img src={IncubationImage} alt="" />
                             </div>
-                            <div>
-                                <p className={classes.TrainingTitle}>INCUBATION</p>
+                            <div className='mt-9 text-center'>
+                                <a href='#' className={classes.TrainingTitle}>INCUBATION</a>
                             </div>
                         </Col>
                         <Col>
                             <div className='flex justify-center'>
                                 <img src={TechMeetUpImage} alt="" />
                             </div>
-                            <div>
-                                <p className={classes.TrainingTitle}>TECH MEET-UP</p>
+                            <div className='mt-9 text-center'>
+                                <a href='#' className={classes.TrainingTitle}>TECH MEET-UP</a>
                             </div>
                         </Col>
                     </Row>
