@@ -7,9 +7,9 @@ import classes from './OurPartners.module.css';
 
 const OurPartners = () => {
     return (
-        <div className='px-20 py-44'>
+        <div className='md:px-20 py-44'>
             <Container fluid>
-                <div className='mb-36 text-center'>
+                <div className='mb-16 md:mb-36 text-center'>
                     <h2 className={classes.Title}>Our founding partners</h2>
                 </div>
                 <Row className='flex items-center'>

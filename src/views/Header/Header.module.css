@@ -40,6 +40,8 @@
   .NavbarCollapse{
     background: white;
     margin-top: -1px;
+    padding: 15px 0;
+    color: #000000 !important;
   } 
   .NavbarContainer{
     padding-left: 5px !important;
@@ -52,5 +54,8 @@
   }
   .HeaderLogo{
     width: 9rem;
+  }
+  .NavLinkIcon, .NavLink, .NavLinkWhite{
+    color: black !important;
   }
 }

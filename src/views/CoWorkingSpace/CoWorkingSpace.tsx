@@ -12,7 +12,7 @@ const WorkingSpace = () => {
                     <h2 className='pt-2'>Co-working Space</h2>
                 </Container>
             </div>
-            <div className='px-20 py-44'>
+            <div className='md:px-20 py-20 md:py-44'>
                 <Container fluid>
                     <div className=''>
                         <img className='w-full' src={Image} alt="" />

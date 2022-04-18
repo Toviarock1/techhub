@@ -1,23 +1,26 @@
 import React from 'react'
+//react-bootstrap
 import { Col, Row } from 'react-bootstrap'
+//components
 import PrimaryBtn from '../PrimaryBtn/PrimaryBtn'
+//css
 import classes from "./ProgramsCard.module.css"
 
-interface ProgramsCard {
+type ProgramsCardProps = {
     image: string;
     title: string;
     description: string;
     flexRowReverse: boolean;
 }
 
-const ProgramsCard: React.FC<ProgramsCard> = ({ image, title, description, flexRowReverse }) => {
+const ProgramsCard = ({ image, title, description, flexRowReverse }: ProgramsCardProps) => {
     return (
         <div className='mt-16'>
             <Row className={`${flexRowReverse ? 'flex flex-row-reverse' : 'flex'}`}>
-                <Col>
+                <Col xs={12} sm={6}>
                     <img src={image} alt="" />
                 </Col>
-                <Col>
+                <Col xs={12} sm={6}>
                     <h2 className={classes.Title}>{title}</h2>
                     <p className={classes.Description}>
                         {description}

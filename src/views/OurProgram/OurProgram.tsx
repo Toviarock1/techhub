@@ -1,13 +1,12 @@
 import React from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
-import PrimaryBtn from '../../components/PrimaryBtn/PrimaryBtn';
+import { Container } from 'react-bootstrap'
 import ProgramsCard from '../../components/ProgramsCard/ProgramsCard';
 import Image from './../../assets/svgs/image 9.svg'
-import classes from './OurProgram.module.css';
+
 
 const OurProgram = () => {
     return (
-        <div className='px-20 py-44'>
+        <div className='md:px-20 py-44'>
             <Container fluid>
                 <ProgramsCard
                     image={Image}

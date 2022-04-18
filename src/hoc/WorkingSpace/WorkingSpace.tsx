@@ -1,6 +1,7 @@
-import React from 'react'
-import Header from '../../views/Header/Header'
-import CoWorkingSpace from '../../views/CoWorkingSpace/CoWorkingSpace'
+import React from 'react';
+//components
+import CoWorkingSpace from '../../views/CoWorkingSpace/CoWorkingSpace';
+//hoc component
 import Layout from '../Layout/Layout'
 
 const WorkingSpace = () => {

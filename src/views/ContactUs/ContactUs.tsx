@@ -46,17 +46,17 @@ const ContactUs = () => {
     const closeModal = () => setShowModal(false);
 
     return (
-        <div className='px-20 py-44'>
+        <div className='md:px-20 py-44'>
             <Container fluid>
                 <Row>
-                    <Col xs={5}>
+                    <Col xs={12} sm={4}>
                         <Form noValidate validated={validated} onSubmit={handleSubmit}>
                             <Form.Group className="mb-3" controlId="formGroupName">
-                                <Form.Label>Your Name (required)</Form.Label>
+                                <Form.Label>Your Name</Form.Label>
                                 <Form.Control type="text" onChange={(e) => setContactForm({ ...contactForm, name: e.target.value })} required />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formGroupEmail">
-                                <Form.Label>Your Email (required)</Form.Label>
+                                <Form.Label>Your Email</Form.Label>
                                 <Form.Control type="email" onChange={(e) => setContactForm({ ...contactForm, email: e.target.value })} required />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formGroupSubject">
@@ -73,8 +73,8 @@ const ContactUs = () => {
                             </Button>
                         </Form>
                     </Col>
-                    <Col>
-                        <div className='text-center'>
+                    <Col xs={12} sm={4}>
+                        <div className='text-center my-28 md:my-auto'>
                             <h2 className={classes.Title}>Follow us</h2>
                             <p className={classes.Description}>boiuattechhub@gmail.com</p>
                             <ul className='flex justify-center p-0'>
@@ -101,7 +101,7 @@ const ContactUs = () => {
                             </ul>
                         </div>
                     </Col>
-                    <Col>
+                    <Col xs={12} sm={4}>
                         <h2 className={classes.Title}>Our Address</h2>
                         <p className={classes.Description}>
                             Obinze, Along Owerri-Port-harcourt
@@ -111,7 +111,7 @@ const ContactUs = () => {
                         </p>
                         <p className={classes.Description}>
                             Call: +234-703-849-9799<br />
-                            Email: info@heartlandincubator.com
+                            Email: boiuattechhub@gmail.com
                         </p>
                     </Col>
                 </Row>

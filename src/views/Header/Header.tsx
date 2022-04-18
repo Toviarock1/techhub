@@ -5,11 +5,11 @@ import Logo from './../../assets/svgs/BOI-UAT-HUB-LOGO 1.svg';
 import Logo2 from './../../assets/svgs/BOI-UAT-HUB-LOGO-2 1.svg'
 import classes from './Header.module.css';
 
-interface HeaderProps {
-    navLinkWhite?: boolean
+type HeaderProps = {
+    navLinkWhite: boolean
 }
 
-const Header: React.FC<HeaderProps> = ({ navLinkWhite }) => {
+const Header = ({ navLinkWhite }: HeaderProps) => {
     const [navbar, setNavbar] = useState(false);
 
     const changeBackgroundHandler = () => {
@@ -41,17 +41,17 @@ const Header: React.FC<HeaderProps> = ({ navLinkWhite }) => {
                         <Nav.Link className={navLinkWhite ? classes.NavLinkWhite : classes.NavLink} href="contact">Contact</Nav.Link>
                     </Nav>
                     <Nav className="flex items-center ml-2">
-                        <Nav.Link className='p-0 mx-1 ml-5' href="#features">
-                            <FaLinkedin className={`text-xl ${navLinkWhite ? 'text-white' : 'text-black'}`} />
+                        <Nav.Link className='p-0 mx-1 ml-5 my-2 md:my-auto' href="#features">
+                            <FaLinkedin className={`text-xl ${navLinkWhite ? 'md:text-white' : 'text-black'} ${classes.NavLinkIcon}`} />
                         </Nav.Link>
-                        <Nav.Link className='p-0 mx-1' href="#features">
-                            <FaFacebook className={`text-xl ${navLinkWhite ? 'text-white' : 'text-black'}`} />
+                        <Nav.Link className='p-0 mx-1 my-2 md:my-auto' href="#features">
+                            <FaFacebook className={`text-xl ${navLinkWhite ? 'md:text-white' : 'text-black'} ${classes.NavLinkIcon}`} />
                         </Nav.Link>
-                        <Nav.Link className='p-0 mx-1' href="#features">
-                            <FaTwitter className={`text-xl ${navLinkWhite ? 'text-white' : 'text-black'}`} />
+                        <Nav.Link className='p-0 mx-1 my-2 md:my-auto' href="#features">
+                            <FaTwitter className={`text-xl ${navLinkWhite ? 'md:text-white' : 'text-black'} ${classes.NavLinkIcon}`} />
                         </Nav.Link>
-                        <Nav.Link className='p-0 mx-1' href="#features">
-                            <FaInstagram className={`text-xl ${navLinkWhite ? 'text-white' : 'text-black'}`} />
+                        <Nav.Link className='p-0 mx-1 my-2 md:my-auto' href="#features">
+                            <FaInstagram className={`text-xl ${navLinkWhite ? 'md:text-white' : 'text-black'} ${classes.NavLinkIcon}`} />
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

@@ -4,10 +4,10 @@ import classes from './Vision.module.css';
 
 const Vision = () => {
     return (
-        <div className={`${classes.BackgroundBg} px-20 py-44`}>
+        <div className={`${classes.BackgroundBg} md:px-20 py-44`}>
             <Container fluid>
                 <div>
-                    <div className={`${classes.OurVisionCard} bg-blue-900 p-5 text-white w-96 rounded-3xl w-120`}>
+                    <div className={`${classes.OurVisionCard} bg-blue-900 p-5 text-white rounded-3xl md:w-120`}>
                         <h2>Our Vision</h2>
                         <p>
                             To be a leading entrepreneurial ecosystem,
@@ -17,7 +17,7 @@ const Vision = () => {
                             Africans, through inclusive economic growth.
                         </p>
                     </div>
-                    <div className={`${classes.OurMissionCard} bg-white p-5 text-black rounded-3xl ml-64 w-120`}>
+                    <div className={`${classes.OurMissionCard} bg-white p-5 text-black rounded-3xl md:ml-64 md:w-120`}>
                         <h2>Our Mission</h2>
                         <p>
                             To create a growing and powerfully enabling

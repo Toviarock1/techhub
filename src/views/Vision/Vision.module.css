@@ -15,7 +15,7 @@
 .OurVisionCard p {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 18px;
   line-height: 129.9%;
   letter-spacing: -0.02em;
@@ -28,7 +28,7 @@
 .OurMissionCard p {
   font-family: "Raleway";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 18px;
   line-height: 129.9%;
   letter-spacing: -0.02em;
@@ -42,4 +42,14 @@
   line-height: 42px;
   letter-spacing: -0.02em;
   color: #000000;
+}
+
+@media screen and (max-width: 640px) {
+  .OurMissionCard p, .OurVisionCard p {
+    font-weight: 100;
+    font-size: 15px;
+  }
+  .OurMissionCard h2, .OurVisionCard h2 {
+    font-size: 24px;
+  }
 }

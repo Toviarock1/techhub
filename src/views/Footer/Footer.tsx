@@ -1,13 +1,13 @@
 import React from 'react'
 import { Container, Row, Col, Button, Form } from 'react-bootstrap';
-import { FaEnvelope, FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import classes from './Footer.module.css';
 
 const Footer = () => {
     return (
         <footer className={`${classes.Footer} bg-green-900 pt-16 pb-2`}>
             <div className='border-white border-y-2 py-16'>
-                <div className='px-20'>
+                <div className='md:px-20'>
                     <Container fluid>
                         <div>
                             <Row>
@@ -51,11 +51,8 @@ const Footer = () => {
                                         <a className='text-white no-underline' href="#">PAIA Manual</a>
                                     </div>
                                 </Col>
-                                <Col>
-                                    <div>
-                                        <p className='text-white no-underline'>Join our Community</p>
-                                    </div>
-                                    <div className='w-96'>
+                                <Col className=''>
+                                    <div className='mt-11 md:mt-auto w-96'>
                                         <Form>
                                             <Form.Group>
                                                 <Form.Label className="text-white" >
@@ -81,8 +78,8 @@ const Footer = () => {
                     </Container>
                 </div>
             </div>
-            <div className='px-20 mt-4'>
-                <Row>
+            <div className='md:px-20 mt-4'>
+                <Row className='mr-0 md:mr-auto'>
                     <Col xs={12} sm={6}>
                         <p className='text-white text-xs'>&copy; BOI-UAT hub | All Rights Reserved</p>
                     </Col>

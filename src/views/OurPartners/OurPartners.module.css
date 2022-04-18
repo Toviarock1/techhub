@@ -7,3 +7,10 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
+
+@media screen and (max-width: 640px) {
+  .Title {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}

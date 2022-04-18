@@ -43,6 +43,7 @@
 @media screen and (max-width: 500px) {
   .MobileWelcomeTitle {
     display: block;
+    font-size: 27px;
   }
   .WelcomeTitle {
     display: none;

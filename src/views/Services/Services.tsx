@@ -10,7 +10,7 @@ import TechMeetUpImage from './../../assets/svgs/Rectangle 21.svg';
 
 const Services = () => {
     return (
-        <div className='bg-white px-20 py-30 pb-48'>
+        <div className='bg-white md:px-20 py-30 pb-48'>
             <Container>
                 <div>
                     <div className='text-center mb-24'>

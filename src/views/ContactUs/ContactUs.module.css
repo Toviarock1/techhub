@@ -17,3 +17,9 @@
 .ModalBtn {
   background-color: #F40909;
 }
+
+@media screen and (max-width: 640px) {
+  .Description {
+    font-size: 15px;
+  }
+}

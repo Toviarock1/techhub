@@ -31,3 +31,10 @@
   color: white;
   width: 100%;
 }
+
+@media screen and (max-width: 640px) {
+  .Footer div {
+    width: 100%;
+    font-size: 14px;
+  }
+}
