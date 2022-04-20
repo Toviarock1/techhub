@@ -46,7 +46,12 @@ const ContactUs = () => {
     const closeModal = () => setShowModal(false);
 
     return (
-        <div className='md:px-20 py-44'>
+        <div className='md:px-20 py-44 pt-24'>
+            <div className='mb-11'>
+                <iframe style={{ width: "100%", height: "500px", backgroundColor: "blue" }}
+                    src="https://maps.google.com/maps?q=toru-orua&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                ></iframe>
+            </div>
             <Container fluid>
                 <Row>
                     <Col xs={12} sm={4}>
