@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { ChangeEvent, FormEvent, FormEventHandler, useState } from 'react';
 //react-boostrap
 import { Button, Col, Container, Form, Modal, Row, Spinner } from 'react-bootstrap'
 import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
@@ -9,6 +9,7 @@ const ContactUs = () => {
     const [validated, setValidated] = useState(false);
     const [loading, setLoading] = useState(false);
     const [showModal, setShowModal] = useState(false);
+    const [showErrorModal, setShowErrorModal] = useState(false);
     const [contactForm, setContactForm] = useState({
         name: '',
         email: '',
@@ -16,7 +17,7 @@ const ContactUs = () => {
         message: ''
     })
 
-    const handleSubmit = (event: any): void => {
+    const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.preventDefault();
@@ -36,19 +37,29 @@ const ContactUs = () => {
                 console.log(res);
                 setShowModal(true);
                 setLoading(false);
+                setContactForm({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                });
             }).catch(err => {
                 setLoading(false);
+                setShowErrorModal(true);
                 console.log(err);
             })
         }
     };
 
     const closeModal = () => setShowModal(false);
+    const closeErrorModal = () => setShowErrorModal(false);
 
     return (
         <div className='md:px-20 py-44 pt-24'>
             <div className='mb-11'>
-                <iframe style={{ width: "100%", height: "500px", backgroundColor: "blue" }}
+                <iframe
+                    title='google map'
+                    style={{ width: "100%", height: "500px", backgroundColor: "green" }}
                     src="https://maps.google.com/maps?q=toru-orua&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 ></iframe>
             </div>
@@ -58,19 +69,19 @@ const ContactUs = () => {
                         <Form noValidate validated={validated} onSubmit={handleSubmit}>
                             <Form.Group className="mb-3" controlId="formGroupName">
                                 <Form.Label>Your Name</Form.Label>
-                                <Form.Control type="text" onChange={(e) => setContactForm({ ...contactForm, name: e.target.value })} required />
+                                <Form.Control type="text" onChange={(e) => setContactForm({ ...contactForm, name: e.target.value })} value={contactForm.name} required />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formGroupEmail">
                                 <Form.Label>Your Email</Form.Label>
-                                <Form.Control type="email" onChange={(e) => setContactForm({ ...contactForm, email: e.target.value })} required />
+                                <Form.Control type="email" onChange={(e) => setContactForm({ ...contactForm, email: e.target.value })} value={contactForm.email} required />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formGroupSubject">
                                 <Form.Label>Subject</Form.Label>
-                                <Form.Control type="text" onChange={(e) => setContactForm({ ...contactForm, subject: e.target.value })} required />
+                                <Form.Control type="text" onChange={(e) => setContactForm({ ...contactForm, subject: e.target.value })} value={contactForm.subject} required />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Your Message</Form.Label>
-                                <Form.Control as="textarea" rows={7} onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })} required />
+                                <Form.Control as="textarea" rows={7} onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })} value={contactForm.message} required />
                             </Form.Group>
 
                             <Button disabled={loading} variant="primary" type="submit" className="FormBtn">
@@ -128,6 +139,20 @@ const ContactUs = () => {
                 <Modal.Body>We've received your message and will get back to you within 24 hours. <br /> In the meantime, make sure to <a className='no-underline text-green-500' href="#">follow us on twitter</a> <br /></Modal.Body>
                 <Modal.Footer>
                     <Button className={classes.ModalBtn} variant="secondary" onClick={closeModal}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            {/* error modal */}
+            <Modal show={showErrorModal} onHide={closeErrorModal}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Ooops</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    Please check your internet connection and try again
+                </Modal.Body>
+                <Modal.Footer>
+                    <Button className={classes.ModalBtn} variant="secondary" onClick={closeErrorModal}>
                         Close
                     </Button>
                 </Modal.Footer>
