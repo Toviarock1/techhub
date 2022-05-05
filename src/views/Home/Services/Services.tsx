@@ -3,10 +3,10 @@ import { Col, Container, Row } from 'react-bootstrap'
 //css
 import classes from './Services.module.css';
 //images
-import TrainingImage from './../../assets/svgs/Rectangle 15.svg';
-import CoWorkingSpaceImage from './../../assets/svgs/Rectangle 19.svg';
-import IncubationImage from './../../assets/svgs/Rectangle 20.svg';
-import TechMeetUpImage from './../../assets/svgs/Rectangle 21.svg';
+import TrainingImage from './../../../assets/svgs/Rectangle 15.svg';
+import CoWorkingSpaceImage from './../../../assets/svgs/Rectangle 19.svg';
+import IncubationImage from './../../../assets/svgs/Rectangle 20.svg';
+import TechMeetUpImage from './../../../assets/svgs/Rectangle 21.svg';
 
 const Services = () => {
     return (

@@ -1,7 +1,8 @@
-import React from 'react'
-import OurProgram from '../../views/Programs/OurProgram/OurProgram'
-import OurProgramHero from '../../views/Programs/OurProgramHero/OurProgramHero'
-import Layout from '../Layout/Layout'
+import React from 'react';
+//components
+import OurProgram from './OurProgram/OurProgram'
+import OurProgramHero from './OurProgramHero/OurProgramHero'
+import Layout from './../../hoc/Layout/Layout'
 
 const Program = () => {
     return (

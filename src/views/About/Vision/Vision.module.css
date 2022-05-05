@@ -1,8 +1,9 @@
 .BackgroundBg {
-  background-image: url("./../../assets/svgs/image\ 4.svg");
+  background-image: url("./../../../assets/svgs/image\ 4.svg");
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .OurVisionCard h2 {
   font-family: "Raleway";
   font-style: normal;
@@ -12,6 +13,7 @@
   letter-spacing: -0.02em;
   color: #ffffff;
 }
+
 .OurVisionCard p {
   font-family: "Raleway";
   font-style: normal;
@@ -25,6 +27,7 @@
 .OurMissionCard {
   margin-top: -2.5rem;
 }
+
 .OurMissionCard p {
   font-family: "Raleway";
   font-style: normal;
@@ -34,6 +37,7 @@
   letter-spacing: -0.02em;
   color: #000000;
 }
+
 .OurMissionCard h2 {
   font-family: "Raleway";
   font-style: normal;
@@ -45,11 +49,15 @@
 }
 
 @media screen and (max-width: 640px) {
-  .OurMissionCard p, .OurVisionCard p {
+
+  .OurMissionCard p,
+  .OurVisionCard p {
     font-weight: 100;
     font-size: 15px;
   }
-  .OurMissionCard h2, .OurVisionCard h2 {
+
+  .OurMissionCard h2,
+  .OurVisionCard h2 {
     font-size: 24px;
   }
 }

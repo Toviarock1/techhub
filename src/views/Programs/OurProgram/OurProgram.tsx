@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import ProgramsCard from '../../components/ProgramsCard/ProgramsCard';
-import Image from './../../assets/svgs/image 9.svg'
+import ProgramsCard from './../../../components/ProgramsCard/ProgramsCard';
+import Image from './../../../assets/svgs/image 9.svg'
 
 
 const OurProgram = () => {

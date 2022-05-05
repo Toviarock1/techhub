@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import BankOfIndustryLogo from './../../assets/svgs/image 6.svg';
-import VatebraTechHubLogo from './../../assets/svgs/image 7.svg';
-import UatLogo from './../../assets/svgs/image 8.svg';
+import BankOfIndustryLogo from './../../../assets/svgs/image 6.svg';
+import VatebraTechHubLogo from './../../../assets/svgs/image 7.svg';
+import UatLogo from './../../../assets/svgs/image 8.svg';
 import classes from './OurPartners.module.css';
 
 const OurPartners = () => {

@@ -2,7 +2,7 @@ import React from 'react';
 //react-bootstrap
 import { Container } from 'react-bootstrap';
 //components
-import PrimaryBtn from '../../components/PrimaryBtn/PrimaryBtn';
+import PrimaryBtn from '../../../components/PrimaryBtn/PrimaryBtn';
 //css
 import classes from './AboutHero.module.css';
 

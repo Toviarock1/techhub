@@ -2,9 +2,9 @@ import React from 'react';
 //react-router-dom
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //components
-import Home from './hoc/Home/Home';
-import About from './hoc/About/About';
-import Program from './hoc/Program/Program';
+import Home from './views/Home';
+import About from './views/About';
+import Program from './views/Programs';
 import WorkingSpace from './hoc/WorkingSpace/WorkingSpace';
 import Contact from './hoc/Contact/Contact';
 //css

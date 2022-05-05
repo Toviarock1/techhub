@@ -1,8 +1,9 @@
 import React from 'react';
-import Hero from '../../views/Home/HomeHero/HomeHero';
-import Services from '../../views/Home/Services/Services';
-import Welcome from '../../views/Home/Welcome/Welcome';
-import Layout from '../Layout/Layout';
+//components
+import Hero from './HomeHero/HomeHero';
+import Services from './Services/Services';
+import Welcome from './Welcome/Welcome';
+import Layout from './../../hoc/Layout/Layout';
 
 const Home = () => {
     return (

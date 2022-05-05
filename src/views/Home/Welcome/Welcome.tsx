@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
-import PrimaryBtn from '../../components/PrimaryBtn/PrimaryBtn';
-import WelcomeImage from "./../../assets/svgs/Rectangle 10.svg";
+import PrimaryBtn from './../../../components/PrimaryBtn/PrimaryBtn';
+import WelcomeImage from "./../../../assets/svgs/Rectangle 10.svg";
 import classes from './Welcome.module.css';
 
 const Welcome = () => {
