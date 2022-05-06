@@ -61,27 +61,28 @@ const ContactUs = () => {
                     title='google map'
                     style={{ width: "100%", height: "500px", backgroundColor: "green" }}
                     src="https://maps.google.com/maps?q=toru-orua&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    data-testid='google map'
                 ></iframe>
             </div>
             <Container fluid>
                 <Row>
                     <Col xs={12} sm={4}>
-                        <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                        <Form noValidate validated={validated} onSubmit={handleSubmit} data-testid="form">
                             <Form.Group className="mb-3" controlId="formGroupName">
                                 <Form.Label>Your Name</Form.Label>
-                                <Form.Control type="text" onChange={(e) => setContactForm({ ...contactForm, name: e.target.value })} value={contactForm.name} required />
+                                <Form.Control type="text" name='username' onChange={(e) => setContactForm({ ...contactForm, name: e.target.value })} value={contactForm.name} required />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formGroupEmail">
                                 <Form.Label>Your Email</Form.Label>
-                                <Form.Control type="email" onChange={(e) => setContactForm({ ...contactForm, email: e.target.value })} value={contactForm.email} required />
+                                <Form.Control type="email" name='email' onChange={(e) => setContactForm({ ...contactForm, email: e.target.value })} value={contactForm.email} required />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="formGroupSubject">
                                 <Form.Label>Subject</Form.Label>
-                                <Form.Control type="text" onChange={(e) => setContactForm({ ...contactForm, subject: e.target.value })} value={contactForm.subject} required />
+                                <Form.Control type="text" name='subject' onChange={(e) => setContactForm({ ...contactForm, subject: e.target.value })} value={contactForm.subject} required />
                             </Form.Group>
                             <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                 <Form.Label>Your Message</Form.Label>
-                                <Form.Control as="textarea" rows={7} onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })} value={contactForm.message} required />
+                                <Form.Control as="textarea" name='message' rows={7} onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })} value={contactForm.message} required />
                             </Form.Group>
 
                             <Button disabled={loading} variant="primary" type="submit" className="FormBtn">
