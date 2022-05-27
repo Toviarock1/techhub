@@ -4,8 +4,9 @@
   font-size: 20px;
   line-height: 42px;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: white;
 }
+
 .TheTeamContent h3 {
   font-family: "Raleway";
   font-style: normal;
@@ -13,7 +14,7 @@
   font-size: 36px;
   line-height: 42px;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: white;
 }
 
 .TheTeamContent p {
@@ -21,7 +22,7 @@
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  color: black;
+  color: white;
 }
 
 .Carousel {

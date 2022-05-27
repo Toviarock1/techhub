@@ -11,6 +11,10 @@ body {
   color: black;
 }
 
+.green {
+  background-color: #054814;
+}
+
 .item {
   min-height: 40rem;
   min-width: 30rem;
@@ -24,14 +28,14 @@ body {
   pointer-events: none;
 }
 
-.inner-carousel {
+/* .inner-carousel {
   display: flex;
 }
 
 .carousel {
   cursor: grab;
   overflow: hidden;
-}
+} */
 
 .PrimaryBtn {
   display: flex !important;
