@@ -30,7 +30,7 @@ const TheTeam: React.FC = () => {
             <h2>The Team</h2>
             <h3>A focus on leadership</h3>
             <p>
-              Riversands I-Hub is led by a team of dynamic, committed
+              BOI-UAT Incubation center is led by a team of dynamic, committed
               professionals with diverse backgrounds and experience.
             </p>
           </div>

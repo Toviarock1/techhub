@@ -24,10 +24,9 @@ const HomeHero = () => {
         <motion.div
           ref={ref}
           variants={heroVariant}
-          initial={false}
+          initial="hidden"
           animate={control}
-          transition={{ duration: 2 }}
-          viewport={{ once: true }}
+          transition={{ duration: 1 }}
           className="text-black"
         >
           <h1 className={classes.HeroTitle}>
