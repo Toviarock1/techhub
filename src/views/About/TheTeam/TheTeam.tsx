@@ -5,6 +5,8 @@ import { Carousel } from "antd";
 import { motion } from "framer-motion";
 import classes from "./TheTeam.module.css";
 import Image from "./../../../assets/images/simon.jpg";
+import Ma from "./../../../assets/images/ma.jpg";
+import Mercy from "./../../../assets/images/mercy.jpg";
 
 const TheTeam: React.FC = () => {
   // const [width, setWidth] = useState(0);
@@ -36,18 +38,14 @@ const TheTeam: React.FC = () => {
           </div>
           <div className="carousel">
             <div className="inner-carousel">
-              <Carousel autoplay>
+              <Carousel>
                 <div>
                   <div className="flex items-center justify-center space-x-32 my-24">
                     <div>
                       <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" src={Image} />
+                        <Card.Img variant="top" className="" src={Ma} />
                         <Card.Body>
-                          <Card.Title>Card Title</Card.Title>
-                          <Card.Text>
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </Card.Text>
+                          <Card.Title>Manager</Card.Title>
                           <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
                       </Card>
@@ -56,24 +54,16 @@ const TheTeam: React.FC = () => {
                       <Card style={{ width: "18rem" }}>
                         <Card.Img variant="top" src={Image} />
                         <Card.Body>
-                          <Card.Title>Card Title</Card.Title>
-                          <Card.Text>
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </Card.Text>
+                          <Card.Title>Web Developer</Card.Title>
                           <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
                       </Card>
                     </div>
                     <div>
                       <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" src={Image} />
+                        <Card.Img variant="top" src={Mercy} />
                         <Card.Body>
                           <Card.Title>Card Title</Card.Title>
-                          <Card.Text>
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </Card.Text>
                           <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
                       </Card>
@@ -87,10 +77,6 @@ const TheTeam: React.FC = () => {
                         <Card.Img variant="top" src={Image} />
                         <Card.Body>
                           <Card.Title>Card Title</Card.Title>
-                          <Card.Text>
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </Card.Text>
                           <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
                       </Card>
@@ -100,10 +86,6 @@ const TheTeam: React.FC = () => {
                         <Card.Img variant="top" src={Image} />
                         <Card.Body>
                           <Card.Title>Card Title</Card.Title>
-                          <Card.Text>
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </Card.Text>
                           <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
                       </Card>
@@ -113,10 +95,6 @@ const TheTeam: React.FC = () => {
                         <Card.Img variant="top" src={Image} />
                         <Card.Body>
                           <Card.Title>Card Title</Card.Title>
-                          <Card.Text>
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </Card.Text>
                           <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
                       </Card>
@@ -130,10 +108,6 @@ const TheTeam: React.FC = () => {
                         <Card.Img variant="top" src={Image} />
                         <Card.Body>
                           <Card.Title>Card Title</Card.Title>
-                          <Card.Text>
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </Card.Text>
                           <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
                       </Card>
@@ -143,10 +117,6 @@ const TheTeam: React.FC = () => {
                         <Card.Img variant="top" src={Image} />
                         <Card.Body>
                           <Card.Title>Card Title</Card.Title>
-                          <Card.Text>
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </Card.Text>
                           <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
                       </Card>
@@ -156,10 +126,6 @@ const TheTeam: React.FC = () => {
                         <Card.Img variant="top" src={Image} />
                         <Card.Body>
                           <Card.Title>Card Title</Card.Title>
-                          <Card.Text>
-                            Some quick example text to build on the card title
-                            and make up the bulk of the card's content.
-                          </Card.Text>
                           <Button variant="primary">Go somewhere</Button>
                         </Card.Body>
                       </Card>

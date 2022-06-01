@@ -9,7 +9,7 @@ const HomeHero = () => {
   const [ref, inView] = useInView();
 
   const heroVariant = {
-    visible: { opacity: 1, x: ["0px", "100px", "10px"] },
+    visible: { opacity: 1, x: "10px" },
     hidden: { opacity: 0, x: 0 },
   };
 
