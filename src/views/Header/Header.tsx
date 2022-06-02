@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
 import Logo from './../../assets/svgs/BOI-UAT-HUB-LOGO 1.svg';
@@ -28,7 +29,7 @@ const Header = ({ navLinkWhite }: HeaderProps) => {
     return (
         <Navbar className={`${navbar ? (navLinkWhite ? classes.AboutNavbarScroll : classes.NavbarScroll) : classes.Navbar} md:px-11 h-14`} fixed='top' collapseOnSelect expand="lg" variant="dark">
             <Container className={classes.NavbarContainer} fluid>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="/">
                     <img src={navLinkWhite ? Logo2 : Logo} className={`${classes.HeaderLogo} w-52`} alt="The BOI-UAT incubation center Logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

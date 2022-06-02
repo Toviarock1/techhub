@@ -7,6 +7,7 @@ import classes from "./TheTeam.module.css";
 import Image from "./../../../assets/images/simon.jpg";
 import Ma from "./../../../assets/images/ma.jpg";
 import Mercy from "./../../../assets/images/mercy.jpg";
+import TeamCard from "../../../components/TeamCard/TeamCard";
 
 const TheTeam: React.FC = () => {
   // const [width, setWidth] = useState(0);
@@ -38,98 +39,26 @@ const TheTeam: React.FC = () => {
           </div>
           <div className="carousel">
             <div className="inner-carousel">
-              <Carousel>
+              <Carousel autoplay>
                 <div>
-                  <div className="flex items-center justify-center space-x-32 my-24">
-                    <div>
-                      <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" className="" src={Ma} />
-                        <Card.Body>
-                          <Card.Title>Manager</Card.Title>
-                          <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                      </Card>
-                    </div>
-                    <div>
-                      <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" src={Image} />
-                        <Card.Body>
-                          <Card.Title>Web Developer</Card.Title>
-                          <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                      </Card>
-                    </div>
-                    <div>
-                      <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" src={Mercy} />
-                        <Card.Body>
-                          <Card.Title>Card Title</Card.Title>
-                          <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                      </Card>
-                    </div>
+                  <div className="flex items-center justify-center space-x-24 my-24">
+                    <TeamCard img={Image} title="Web Developer" />
+                    <TeamCard img={Image} title="Web Developer" />
+                    <TeamCard img={Image} title="Web Developer" />
                   </div>
                 </div>
                 <div>
-                  <div className="flex items-center justify-center space-x-32 my-24">
-                    <div>
-                      <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" src={Image} />
-                        <Card.Body>
-                          <Card.Title>Card Title</Card.Title>
-                          <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                      </Card>
-                    </div>
-                    <div>
-                      <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" src={Image} />
-                        <Card.Body>
-                          <Card.Title>Card Title</Card.Title>
-                          <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                      </Card>
-                    </div>
-                    <div>
-                      <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" src={Image} />
-                        <Card.Body>
-                          <Card.Title>Card Title</Card.Title>
-                          <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                      </Card>
-                    </div>
+                  <div className="flex items-center justify-center space-x-24 my-24">
+                    <TeamCard img={Image} title="Web Developer" />
+                    <TeamCard img={Image} title="Web Developer" />
+                    <TeamCard img={Image} title="Web Developer" />
                   </div>
                 </div>
                 <div>
-                  <div className="flex items-center justify-center space-x-32 my-24">
-                    <div>
-                      <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" src={Image} />
-                        <Card.Body>
-                          <Card.Title>Card Title</Card.Title>
-                          <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                      </Card>
-                    </div>
-                    <div>
-                      <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" src={Image} />
-                        <Card.Body>
-                          <Card.Title>Card Title</Card.Title>
-                          <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                      </Card>
-                    </div>
-                    <div>
-                      <Card style={{ width: "18rem" }}>
-                        <Card.Img variant="top" src={Image} />
-                        <Card.Body>
-                          <Card.Title>Card Title</Card.Title>
-                          <Button variant="primary">Go somewhere</Button>
-                        </Card.Body>
-                      </Card>
-                    </div>
+                  <div className="flex items-center justify-center space-x-24 my-24">
+                    <TeamCard img={Image} title="Web Developer" />
+                    <TeamCard img={Image} title="Web Developer" />
+                    <TeamCard img={Image} title="Web Developer" />
                   </div>
                 </div>
               </Carousel>

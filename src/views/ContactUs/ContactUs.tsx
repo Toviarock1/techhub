@@ -121,13 +121,11 @@ const ContactUs = () => {
                     <Col xs={12} sm={4}>
                         <h2 className={classes.Title}>Our Address</h2>
                         <p className={classes.Description}>
-                            Obinze, Along Owerri-Port-harcourt
-                            Expressway,  Opposite Whitehouse Bus Stop,
-
-                            Owerri, Imo State.
+                            BOI-UAT Incubation Centre, Block D, University of africa, toru-orua
+                            Owerri, Bayelsa State.
                         </p>
                         <p className={classes.Description}>
-                            Call: +234-703-849-9799<br />
+                            Call: +234-813-137-6420<br />
                             Email: boiuattechhub@gmail.com
                         </p>
                     </Col>

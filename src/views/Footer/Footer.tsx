@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import classes from "./Footer.module.css";
@@ -13,19 +14,19 @@ const Footer = () => {
               <Row>
                 <Col className="space-y-2">
                   <div>
-                    <a className="text-white no-underline" href="#">
+                    <Link to={'/about'} className="text-white no-underline">
                       About us
-                    </a>
+                    </Link>
                   </div>
                   <div>
-                    <a className="text-white no-underline" href="#">
+                    <Link to="/contact" className="text-white no-underline">
                       Contact us
-                    </a>
+                    </Link>
                   </div>
                   <div>
-                    <a className="text-white no-underline" href="#">
+                    <Link to="/important info" className="text-white no-underline">
                       Important info
-                    </a>
+                    </Link>
                   </div>
                 </Col>
 
