@@ -1,6 +1,7 @@
 import React from "react";
 //react-bootstrap
 import { Container } from "react-bootstrap";
+import { motion } from "framer-motion";
 //css
 import classes from "./AboutHero.module.css";
 

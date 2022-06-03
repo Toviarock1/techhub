@@ -8,9 +8,7 @@ import classes from "./Welcome.module.css";
 
 const Welcome = () => {
   const control = useAnimation();
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
+  const [ref, inView] = useInView();
 
   const welcomeImgVariant = {
     visible: {

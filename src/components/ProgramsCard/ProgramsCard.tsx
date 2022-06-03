@@ -26,10 +26,12 @@ const ProgramsCard = ({
           <img className="m-auto block" src={image} alt="" />
         </Col>
         <Col xs={12} sm={6}>
-          <h2 className={classes.Title}>{title}</h2>
-          <p className={classes.Description}>{description}</p>
-          <div className="mt-11">
-            <PrimaryBtn classStyle="PrimaryBtn" />
+          <div className="mt-8">
+            <h2 className={classes.Title}>{title}</h2>
+            <p className={classes.Description}>{description}</p>
+            <div className="mt-11">
+              <PrimaryBtn classStyle="PrimaryBtn" />
+            </div>
           </div>
         </Col>
       </Row>

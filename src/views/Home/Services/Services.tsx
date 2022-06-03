@@ -18,6 +18,10 @@ const Services = () => {
     visible: { scale: 1 },
     hidden: { scale: 0 },
   };
+  const serviceTextVariant = {
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 },
+  };
 
   useEffect(() => {
     if (inView) {
@@ -45,9 +49,17 @@ const Services = () => {
                 />
               </div>
               <div className="mt-9 text-center">
-                <a href="#" className={classes.TrainingTitle}>
+                <motion.a
+                  href="/programs"
+                  ref={ref}
+                  variants={serviceTextVariant}
+                  transition={{ duration: 2 }}
+                  initial={"hidden"}
+                  animate={control}
+                  className={classes.TrainingTitle}
+                >
                   TRAINING
-                </a>
+                </motion.a>
               </div>
             </Col>
             <Col>
@@ -63,9 +75,17 @@ const Services = () => {
                 />
               </div>
               <div className="mt-9 text-center">
-                <a href="#" className={classes.TrainingTitle}>
+                <motion.a
+                  href="/co-working-space"
+                  ref={ref}
+                  variants={serviceTextVariant}
+                  transition={{ duration: 2 }}
+                  initial={"hidden"}
+                  animate={control}
+                  className={classes.TrainingTitle}
+                >
                   CO-WORKING
-                </a>
+                </motion.a>
               </div>
             </Col>
             <Col>
@@ -81,9 +101,17 @@ const Services = () => {
                 />
               </div>
               <div className="mt-9 text-center">
-                <a href="#" className={classes.TrainingTitle}>
+                <motion.a
+                  href="#"
+                  ref={ref}
+                  variants={serviceTextVariant}
+                  transition={{ duration: 2 }}
+                  initial={"hidden"}
+                  animate={control}
+                  className={classes.TrainingTitle}
+                >
                   INCUBATION
-                </a>
+                </motion.a>
               </div>
             </Col>
             <Col>
@@ -99,9 +127,17 @@ const Services = () => {
                 />
               </div>
               <div className="mt-9 text-center">
-                <a href="#" className={classes.TrainingTitle}>
+                <motion.a
+                  href="#"
+                  ref={ref}
+                  variants={serviceTextVariant}
+                  transition={{ duration: 2 }}
+                  initial={"hidden"}
+                  animate={control}
+                  className={classes.TrainingTitle}
+                >
                   TECH MEET-UP
-                </a>
+                </motion.a>
               </div>
             </Col>
           </Row>
