@@ -11,10 +11,12 @@ import Contact from "./hoc/Contact/Contact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
 import "./App.css";
+import { ScrollToTop } from "./shared/utility";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

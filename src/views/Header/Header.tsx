@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import Logo from "./../../assets/svgs/BOI-UAT-HUB-LOGO 1.svg";
@@ -66,12 +66,12 @@ const Header = ({ navLinkWhite }: HeaderProps) => {
             >
               About
             </NavLink>
-            <NavLink
+            <Link
               className={navLinkWhite ? classes.NavLinkWhite : classes.NavLink}
               to="/programs"
             >
               Programs
-            </NavLink>
+            </Link>
             <NavLink
               className={navLinkWhite ? classes.NavLinkWhite : classes.NavLink}
               to="/co-working-space"

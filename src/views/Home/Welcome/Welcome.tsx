@@ -12,11 +12,11 @@ const Welcome = () => {
 
   const welcomeImgVariant = {
     visible: {
-      x: 50,
+      x: 0,
       opacity: 1,
     },
     hidden: {
-      x: 0,
+      x: -50,
       opacity: 0,
     },
   };
@@ -24,7 +24,7 @@ const Welcome = () => {
   const welcomeTextVariant = {
     visible: {
       y: 0,
-      x: 50,
+      x: 0,
       opacity: 1,
     },
     hidden: {
