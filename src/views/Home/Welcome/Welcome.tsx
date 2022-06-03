@@ -26,7 +26,7 @@ const Welcome = () => {
   const welcomeTextVariant = {
     visible: {
       y: 0,
-      x: 0,
+      x: 50,
       opacity: 1,
     },
     hidden: {
