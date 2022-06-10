@@ -104,7 +104,11 @@ const Welcome = () => {
                 We provide seed capital, office space, high internet access,
                 meeting room and other facilities.
               </motion.p>
-              <PrimaryBtn title="Learn more" classStyle="PrimaryBtn" />
+              <PrimaryBtn
+                title="Learn more"
+                link="about"
+                classStyle="PrimaryBtn"
+              />
             </Col>
           </Row>
         </div>

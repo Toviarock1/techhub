@@ -14,7 +14,7 @@ const Footer = () => {
               <Row>
                 <Col className="space-y-2">
                   <div>
-                    <Link to={'/about'} className="text-white no-underline">
+                    <Link to={"/about"} className="text-white no-underline">
                       About us
                     </Link>
                   </div>
@@ -24,7 +24,10 @@ const Footer = () => {
                     </Link>
                   </div>
                   <div>
-                    <Link to="/important info" className="text-white no-underline">
+                    <Link
+                      to="/important info"
+                      className="text-white no-underline"
+                    >
                       Important info
                     </Link>
                   </div>
@@ -32,7 +35,10 @@ const Footer = () => {
 
                 <Col lg={5} className="">
                   <div className="mt-11 md:mt-auto w-96">
-                    <Form>
+                    <Form
+                      action="https://gmail.us14.list-manage.com/subscribe/post?u=f77fdbb78f993eb2d5e4b951f&amp;id=5891acc950"
+                      method="post"
+                    >
                       <Form.Group>
                         <Form.Label className="text-white">
                           Subcribe to our newsletter:
