@@ -1,5 +1,5 @@
 * {
-  /* border: 0.5px solid red; */
+  border: 0.5px solid red;
 }
 
 body {
@@ -9,6 +9,11 @@ body {
   font-weight: 600;
   font-size: 14px;
   color: black;
+}
+
+.LinkBtn {
+  display: block;
+  width: fit-content;
 }
 
 .green {
@@ -54,4 +59,13 @@ body {
   background-color: #054814 !important;
   border: 1px solid white !important;
   border-radius: 0 !important;
+}
+
+.Content {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  color: #000000;
 }

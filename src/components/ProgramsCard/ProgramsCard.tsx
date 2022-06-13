@@ -80,7 +80,10 @@ const ProgramsCard = ({
             <h2 className={classes.Title}>{title}</h2>
             <p className={classes.Description}>{description}</p>
             <div className="mt-11">
-              <PrimaryBtn title="Learn More" classStyle="PrimaryBtn" />
+              <PrimaryBtn
+                title="Learn More"
+                classStyle="PrimaryBtn"
+              ></PrimaryBtn>
             </div>
           </motion.div>
         </Col>

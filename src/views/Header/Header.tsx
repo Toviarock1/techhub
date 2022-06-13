@@ -80,6 +80,12 @@ const Header = ({ navLinkWhite }: HeaderProps) => {
             </NavLink>
             <NavLink
               className={navLinkWhite ? classes.NavLinkWhite : classes.NavLink}
+              to="/rent-space"
+            >
+              Rent-Space
+            </NavLink>
+            <NavLink
+              className={navLinkWhite ? classes.NavLinkWhite : classes.NavLink}
               to="/contact"
             >
               Contact

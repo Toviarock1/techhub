@@ -49,7 +49,7 @@ const WorkingSpace = () => {
               <li>Meeting Rooms</li>
               <li>Conference Rooms</li>
             </ul>
-            {/* <PrimaryBtn classStyle="PrimaryBtn" /> */}
+            <PrimaryBtn classStyle="PrimaryBtn" title="Coming Soon" disabled />
           </div>
         </Container>
       </div>

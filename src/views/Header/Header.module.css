@@ -6,7 +6,7 @@
   line-height: 14px;
   letter-spacing: 0.02em;
   color: black !important;
-  margin: 0px 5px;
+  margin: 5px 5px;
 }
 
 .NavLinkWhite {
@@ -17,7 +17,7 @@
   line-height: 14px;
   letter-spacing: 0.02em;
   color: white !important;
-  margin: 0px 5px;
+  margin: 5px 5px;
 }
 
 .NavLinkIcons {
@@ -26,7 +26,7 @@
 
 .Navbar {
   height: 88px;
-  background-color: transparent !important;
+  background-color: transparent;
   transition: all 0.3s linear;
 }
 
@@ -42,7 +42,7 @@
   transition: all 0.3s linear;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 991px) {
   .NavbarCollapse {
     background: white;
     margin-top: -1px;
@@ -53,6 +53,10 @@
   .NavbarContainer {
     padding-left: 5px !important;
     padding-right: 5px !important;
+  }
+
+  .Navbar {
+    background-color: #054814;
   }
 
   .NavbarScroll {
