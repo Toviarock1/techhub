@@ -14,6 +14,7 @@ type ProgramsCardProps = {
   title: string;
   description: string;
   flexRowReverse: boolean;
+  slug: string;
 };
 
 const ProgramsCard = ({
@@ -21,6 +22,7 @@ const ProgramsCard = ({
   title,
   description,
   flexRowReverse,
+  slug,
 }: ProgramsCardProps) => {
   const control = useAnimation();
   const [ref, inView] = useInView();
@@ -83,6 +85,7 @@ const ProgramsCard = ({
               <PrimaryBtn
                 title="Learn More"
                 classStyle="PrimaryBtn"
+                slug={slug}
               ></PrimaryBtn>
             </div>
           </motion.div>

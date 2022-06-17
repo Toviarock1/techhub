@@ -8,11 +8,18 @@ type PrimaryBtnProps = {
   title: string;
   link?: string;
   disabled?: boolean;
+  slug?: string;
 };
 
-const PrimaryBtn = ({ classStyle, title, link, disabled }: PrimaryBtnProps) => {
+const PrimaryBtn = ({
+  classStyle,
+  title,
+  link,
+  disabled,
+  slug,
+}: PrimaryBtnProps) => {
   return (
-    <Link to="/programs/1" className="LinkBtn">
+    <Link to={`/programs/${slug}`} className="LinkBtn">
       <Button
         className={`${classStyle}`}
         variant="success"
