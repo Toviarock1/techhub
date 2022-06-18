@@ -7,7 +7,7 @@ import client from "../../../client";
 type ProgramCardProps = {
   title: string;
   body: any;
-  mainImage: any;
+  mainImage: { asset: { url: string } };
   slug: { current: string };
   description: string;
 };
