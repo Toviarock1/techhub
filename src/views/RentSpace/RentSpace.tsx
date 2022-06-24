@@ -63,7 +63,7 @@ const RentSpace = () => {
           <PrimaryBtn
             title="Book Space"
             classStyle="PrimaryBtn"
-            link="contact"
+            slug="/contact"
           />
         </div>
       </Container>

@@ -45,7 +45,59 @@ const Footer = () => {
                         </Form.Label>
                         <div className="flex">
                           <Row>
-                            <Col sm={8}>
+                            <div
+                              id="mc_embed_signup"
+                              style={{ background: "transparent" }}
+                            >
+                              <form
+                                action="https://gmail.us14.list-manage.com/subscribe/post?u=f77fdbb78f993eb2d5e4b951f&amp;id=5891acc950"
+                                method="post"
+                                id="mc-embedded-subscribe-form"
+                                name="mc-embedded-subscribe-form"
+                                className="validate"
+                                target="_blank"
+                                noValidate
+                              >
+                                <div
+                                  id="mc_embed_signup_scroll"
+                                  className="flex items-center justify-start"
+                                >
+                                  <div
+                                    className="mc-field-group text-white"
+                                    style={{ width: "55%" }}
+                                  >
+                                    <label htmlFor="mce-EMAIL">
+                                      Email Address{" "}
+                                    </label>
+                                    <input
+                                      type="email"
+                                      name="EMAIL"
+                                      className="required email outline-none text-black"
+                                      id="mce-EMAIL"
+                                      style={{ height: "32px" }}
+                                    />
+                                  </div>
+
+                                  <div className="optionalParent">
+                                    <div className="clear foot">
+                                      <input
+                                        type="submit"
+                                        value="Subscribe"
+                                        name="subscribe"
+                                        id="mc-embedded-subscribe"
+                                        className="button"
+                                        style={{
+                                          margin: "0px 5px -6px 13px",
+                                          background: "#054814",
+                                          border: "1px solid white",
+                                        }}
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            {/* <Col sm={8}>
                               <Form.Control
                                 className={`${classes.FooterInput}`}
                                 type="email"
@@ -56,7 +108,7 @@ const Footer = () => {
                               <Button className={classes.NewsletterBtn}>
                                 Subcribe
                               </Button>
-                            </Col>
+                            </Col> */}
                           </Row>
                         </div>
                       </Form.Group>

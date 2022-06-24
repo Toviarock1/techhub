@@ -43,7 +43,7 @@ const Services = () => {
                   variants={servicesVariant}
                   initial="hidden"
                   animate={control}
-                  transition={{ duration: 1 }}
+                  transition={{ duration: 0.1 }}
                   src={TrainingImage}
                   alt=""
                 />
@@ -69,7 +69,7 @@ const Services = () => {
                   variants={servicesVariant}
                   initial="hidden"
                   animate={control}
-                  transition={{ duration: 1.2 }}
+                  transition={{ duration: 0.3 }}
                   src={CoWorkingSpaceImage}
                   alt=""
                 />
@@ -95,7 +95,7 @@ const Services = () => {
                   variants={servicesVariant}
                   initial="hidden"
                   animate={control}
-                  transition={{ duration: 1.3 }}
+                  transition={{ duration: 0.5 }}
                   src={IncubationImage}
                   alt=""
                 />
@@ -121,7 +121,7 @@ const Services = () => {
                   variants={servicesVariant}
                   initial="hidden"
                   animate={control}
-                  transition={{ duration: 1.4 }}
+                  transition={{ duration: 0.7 }}
                   src={TechMeetUpImage}
                   alt=""
                 />

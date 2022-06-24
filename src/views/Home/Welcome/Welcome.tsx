@@ -106,7 +106,7 @@ const Welcome = () => {
               </motion.p>
               <PrimaryBtn
                 title="Learn more"
-                link="about"
+                slug="/about"
                 classStyle="PrimaryBtn"
               />
             </Col>

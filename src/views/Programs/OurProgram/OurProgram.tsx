@@ -53,7 +53,7 @@ const OurProgram = () => {
               image={mainImage.asset.url}
               flexRowReverse={false}
               title={title}
-              slug={slug.current}
+              slug={`/programs/${slug.current}`}
               description={description}
             />
           )

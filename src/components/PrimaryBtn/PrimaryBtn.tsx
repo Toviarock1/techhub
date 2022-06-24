@@ -11,15 +11,20 @@ type PrimaryBtnProps = {
   slug?: string;
 };
 
-const PrimaryBtn = ({
-  classStyle,
-  title,
-  link,
-  disabled,
-  slug,
-}: PrimaryBtnProps) => {
-  return (
-    <Link to={`/programs/${slug}`} className="LinkBtn">
+const PrimaryBtn = ({ classStyle, title, disabled, slug }: PrimaryBtnProps) => {
+  return disabled ? (
+    <Button
+      className={`${classStyle}`}
+      variant="success"
+      disabled={disabled ? true : false}
+    >
+      {title}
+      <span className="ml-2">
+        <FaArrowCircleRight />
+      </span>
+    </Button>
+  ) : (
+    <Link to={`${slug}`} className="LinkBtn">
       <Button
         className={`${classStyle}`}
         variant="success"
