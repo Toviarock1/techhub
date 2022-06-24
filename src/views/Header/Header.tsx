@@ -72,6 +72,12 @@ const Header = ({ navLinkWhite }: HeaderProps) => {
             >
               Programs
             </Link>
+            <Link
+              className={navLinkWhite ? classes.NavLinkWhite : classes.NavLink}
+              to="/incubation"
+            >
+              Incubation
+            </Link>
             <NavLink
               className={navLinkWhite ? classes.NavLinkWhite : classes.NavLink}
               to="/co-working-space"

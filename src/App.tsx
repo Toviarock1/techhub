@@ -14,6 +14,7 @@ import "antd/dist/antd.css";
 import "./App.css";
 import { ScrollToTop } from "./shared/utility";
 import SingleProgram from "./views/Programs/SingleProgram";
+import Incubation from "./views/Incubation";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/incubation" element={<Incubation />} />
         <Route path="/programs" element={<Program />} />
         <Route path="/programs/:slug" element={<SingleProgram />} />
         <Route path="/co-working-space" element={<WorkingSpace />} />
