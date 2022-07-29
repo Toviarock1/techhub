@@ -5,6 +5,7 @@ import { Carousel } from "antd";
 import { motion } from "framer-motion";
 import classes from "./TheTeam.module.css";
 import Image from "./../../../assets/images/simon.jpg";
+import MobileTeamImages from "./images";
 import Ma from "./../../../assets/images/ma.jpg";
 import Mercy from "./../../../assets/images/mercy.jpg";
 import TeamCard from "../../../components/TeamCard/TeamCard";
@@ -39,7 +40,7 @@ const TheTeam: React.FC = () => {
           </div>
           <div className="carousel">
             <div className="inner-carousel">
-              <Carousel autoplay>
+              <Carousel autoplay className={classes.MainCarousel}>
                 <div>
                   <div className="flex items-center justify-center space-x-24 my-24">
                     <TeamCard img={Image} title="Web Developer" />
@@ -61,6 +62,15 @@ const TheTeam: React.FC = () => {
                     <TeamCard img={Image} title="Web Developer" />
                   </div>
                 </div>
+              </Carousel>
+              <Carousel autoplay className={classes.MobileCarousel}>
+                {MobileTeamImages.map((image) => (
+                  <div>
+                    <div className="flex items-center justify-center space-x-24 my-24">
+                      <TeamCard img={image} title="Web Developer" />
+                    </div>
+                  </div>
+                ))}
               </Carousel>
             </div>
           </div>

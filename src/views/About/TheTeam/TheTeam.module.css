@@ -36,3 +36,15 @@
   margin: 0 15px;
   font-size: 4em;
 }
+
+@media screen and (max-width: 1243px) {
+  .MainCarousel {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1243px) {
+  .MobileCarousel {
+    display: none !important;
+  }
+}

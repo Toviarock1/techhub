@@ -62,3 +62,13 @@
         font-size: 54px;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .Pros {
+        width: 100%;
+    }
+
+    .ApplyBtn {
+        padding: 0.5rem 3rem;
+    }
+}
