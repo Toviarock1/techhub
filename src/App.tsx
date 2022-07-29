@@ -8,13 +8,13 @@ import Program from "./views/Programs";
 import WorkingSpace from "./hoc/WorkingSpace/WorkingSpace";
 import Contact from "./hoc/Contact/Contact";
 import RentSpace from "./views/RentSpace";
-import SingleProgram from "./views/Programs/SingleProgram";
-import Incubation from "./views/Incubation";
 //css
 import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
 import "./App.css";
 import { ScrollToTop } from "./shared/utility";
+import SingleProgram from "./views/Programs/SingleProgram";
+import Incubation from "./views/Incubation";
 
 function App() {
   return (
