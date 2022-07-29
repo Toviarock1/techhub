@@ -1,23 +1,23 @@
-import React from 'react';
+import React from "react";
 //components
-import AboutHero from './Hero/AboutHero'
-import Vision from './Vision/Vision';
-import TheTeam from './TheTeam/TheTeam';
-import OurPartners from './OurPartners/OurPartners';
+import AboutHero from "./Hero/AboutHero";
+import Vision from "./Vision/Vision";
+import TheTeam from "./TheTeam/TheTeam";
+import OurPartners from "./OurPartners/OurPartners";
 //hoc component
-import Layout from '../../hoc/Layout/Layout';
+import Layout from "../../hoc/Layout/Layout";
 
 const About = () => {
-    return (
-        <Layout navLinkColor={true}>
-            <>
-                <AboutHero />
-                <Vision />
-                <TheTeam />
-                <OurPartners />
-            </>
-        </Layout>
-    )
-}
+  return (
+    <Layout navLinkColor={true}>
+      <>
+        <AboutHero />
+        <Vision />
+        <TheTeam />
+        <OurPartners />
+      </>
+    </Layout>
+  );
+};
 
-export default About
+export default About;
