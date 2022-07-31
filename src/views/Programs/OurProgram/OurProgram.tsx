@@ -51,7 +51,42 @@ const OurProgram = () => {
 
   return loading ? (
     <div className="my-60">
-      <p className="text-center text-3xl">Loading...</p>
+      <p className="text-center text-3xl">
+        Loading
+        <motion.span
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{ duration: 1, repeat: Infinity }}
+        >
+          .
+        </motion.span>
+        <motion.span
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+        >
+          .
+        </motion.span>
+        <motion.span
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{ duration: 2, repeat: Infinity }}
+        >
+          .
+        </motion.span>
+      </p>
     </div>
   ) : posts.length !== 0 ? (
     <div className="md:px-20 py-44">
@@ -71,18 +106,9 @@ const OurProgram = () => {
     </div>
   ) : (
     <div className="my-60">
-      <motion.p
-        className="text-center text-3xl"
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-        }}
-        transition={{ duration: 5 }}
-      >
-        Something Went Wrong...
-      </motion.p>
+      <p className="text-center text-3xl">
+        Please Check Your Internet Connection and Try Again
+      </p>
     </div>
   );
 };
