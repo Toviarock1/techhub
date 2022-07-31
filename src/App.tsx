@@ -29,6 +29,7 @@ function App() {
         <Route path="/co-working-space" element={<CoWorkingSpace />} />
         <Route path="/rent-space" element={<RentSpace />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/contact/:slug" element={<Contact />} />
       </Routes>
     </Router>
   );

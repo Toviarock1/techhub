@@ -1,8 +1,13 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import classes from "./Incubation.module.css";
+//components
+import PrimaryBtn from "../../components/PrimaryBtn/PrimaryBtn";
+//image
 import Image from "./../../assets/images/incubation-business.jpg";
+//css
+import classes from "./Incubation.module.css";
 
 const Incubation = () => {
   return (
@@ -275,9 +280,12 @@ const Incubation = () => {
               Apply to Our Business Program Today
             </h2>
             <div className="text-center">
-              <Button className={`py-6 px-20 ${classes.ApplyBtn}`}>
+              <Link
+                to="/contact/Application%20to%20join%20BOI-UAT%20Incubation%20Center%20Business%20Program"
+                className={classes.ApplyBtn}
+              >
                 Apply
-              </Button>
+              </Link>
             </div>
           </div>
         </Container>

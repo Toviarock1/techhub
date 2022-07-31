@@ -1,10 +1,6 @@
+import React, { FormEvent, useState, useEffect } from "react";
 import axios from "axios";
-import React, {
-  ChangeEvent,
-  FormEvent,
-  FormEventHandler,
-  useState,
-} from "react";
+import { useParams } from "react-router-dom";
 //react-boostrap
 import {
   Button,
@@ -19,6 +15,7 @@ import { FaLinkedin, FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import classes from "./ContactUs.module.css";
 
 const ContactUs = () => {
+  const { slug } = useParams();
   const [validated, setValidated] = useState(false);
   const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -69,6 +66,12 @@ const ContactUs = () => {
 
   const closeModal = () => setShowModal(false);
   const closeErrorModal = () => setShowErrorModal(false);
+
+  useEffect(() => {
+    if (slug) {
+      setContactForm({ ...contactForm, subject: slug });
+    }
+  }, [slug]);
 
   return (
     <div className="md:px-20 py-44 pt-24">
