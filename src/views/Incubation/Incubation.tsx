@@ -1,9 +1,9 @@
 import React from "react";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 //components
-import PrimaryBtn from "../../components/PrimaryBtn/PrimaryBtn";
+// import PrimaryBtn from "../../components/PrimaryBtn/PrimaryBtn";
 //image
 import Image from "./../../assets/images/incubation-business.jpg";
 //css

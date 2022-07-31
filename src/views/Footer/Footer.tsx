@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Button, Form } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+//css
 import classes from "./Footer.module.css";
 
 const Footer = () => {
@@ -35,84 +36,65 @@ const Footer = () => {
 
                 <Col lg={5} className="">
                   <div className="mt-11 md:mt-auto w-96">
-                    <Form
-                      action="https://gmail.us14.list-manage.com/subscribe/post?u=f77fdbb78f993eb2d5e4b951f&amp;id=5891acc950"
-                      method="post"
-                    >
-                      <Form.Group>
-                        <Form.Label className="text-white">
-                          Subcribe to our newsletter:
-                        </Form.Label>
-                        <div className="flex">
-                          <Row>
-                            <div
-                              id="mc_embed_signup"
-                              style={{ background: "transparent" }}
+                    <div>
+                      <p className="text-white">Subcribe to our newsletter:</p>
+                      <div className="flex">
+                        <Row>
+                          <div
+                            id="mc_embed_signup"
+                            style={{ background: "transparent" }}
+                          >
+                            <form
+                              action="https://gmail.us14.list-manage.com/subscribe/post?u=f77fdbb78f993eb2d5e4b951f&amp;id=5891acc950"
+                              method="post"
+                              id="mc-embedded-subscribe-form"
+                              name="mc-embedded-subscribe-form"
+                              className="validate"
+                              target="_blank"
+                              noValidate
                             >
-                              <form
-                                action="https://gmail.us14.list-manage.com/subscribe/post?u=f77fdbb78f993eb2d5e4b951f&amp;id=5891acc950"
-                                method="post"
-                                id="mc-embedded-subscribe-form"
-                                name="mc-embedded-subscribe-form"
-                                className="validate"
-                                target="_blank"
-                                noValidate
+                              <div
+                                id="mc_embed_signup_scroll"
+                                className="flex items-center justify-start"
                               >
                                 <div
-                                  id="mc_embed_signup_scroll"
-                                  className="flex items-center justify-start"
+                                  className="mc-field-group text-white"
+                                  style={{ width: "55%" }}
                                 >
-                                  <div
-                                    className="mc-field-group text-white"
-                                    style={{ width: "55%" }}
-                                  >
-                                    <label htmlFor="mce-EMAIL">
-                                      Email Address{" "}
-                                    </label>
+                                  <label htmlFor="mce-EMAIL">
+                                    Email Address{" "}
+                                  </label>
+                                  <input
+                                    type="email"
+                                    name="EMAIL"
+                                    className="required email outline-none text-black"
+                                    id="mce-EMAIL"
+                                    style={{ height: "32px" }}
+                                  />
+                                </div>
+
+                                <div className="optionalParent">
+                                  <div className="clear foot">
                                     <input
-                                      type="email"
-                                      name="EMAIL"
-                                      className="required email outline-none text-black"
-                                      id="mce-EMAIL"
-                                      style={{ height: "32px" }}
+                                      type="submit"
+                                      value="Subscribe"
+                                      name="subscribe"
+                                      id="mc-embedded-subscribe"
+                                      className="button"
+                                      style={{
+                                        margin: "0px 5px -6px 13px",
+                                        background: "#054814",
+                                        border: "1px solid white",
+                                      }}
                                     />
                                   </div>
-
-                                  <div className="optionalParent">
-                                    <div className="clear foot">
-                                      <input
-                                        type="submit"
-                                        value="Subscribe"
-                                        name="subscribe"
-                                        id="mc-embedded-subscribe"
-                                        className="button"
-                                        style={{
-                                          margin: "0px 5px -6px 13px",
-                                          background: "#054814",
-                                          border: "1px solid white",
-                                        }}
-                                      />
-                                    </div>
-                                  </div>
                                 </div>
-                              </form>
-                            </div>
-                            {/* <Col sm={8}>
-                              <Form.Control
-                                className={`${classes.FooterInput}`}
-                                type="email"
-                                placeholder="Your Email"
-                              />
-                            </Col>
-                            <Col xs={4}>
-                              <Button className={classes.NewsletterBtn}>
-                                Subcribe
-                              </Button>
-                            </Col> */}
-                          </Row>
-                        </div>
-                      </Form.Group>
-                    </Form>
+                              </div>
+                            </form>
+                          </div>
+                        </Row>
+                      </div>
+                    </div>
                   </div>
                 </Col>
               </Row>
@@ -131,22 +113,22 @@ const Footer = () => {
             <div className="flex justify-end">
               <div className="flex">
                 <div className="px-2">
-                  <a href="#">
+                  <a href="https://www.facebook.com">
                     <FaLinkedin className="text-xl text-white" />
                   </a>
                 </div>
                 <div className="px-2">
-                  <a href="#">
+                  <a href="https://www.facebook.com">
                     <FaFacebook className="text-xl text-white" />
                   </a>
                 </div>
                 <div className="px-2">
-                  <a href="#">
+                  <a href="https://www.facebook.com">
                     <FaTwitter className="text-xl text-white" />
                   </a>
                 </div>
                 <div className="px-2">
-                  <a href="#">
+                  <a href="https://www.facebook.com">
                     <FaInstagram className="text-xl text-white" />
                   </a>
                 </div>

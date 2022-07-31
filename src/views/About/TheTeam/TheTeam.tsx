@@ -19,12 +19,12 @@ const TheTeam: React.FC = () => {
   //     setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth)
   // }, [])
 
-  const contentStyle: React.CSSProperties = {
-    height: "500px",
-    lineHeight: "260px",
-    textAlign: "center",
-    background: "#364d79",
-  };
+  // const contentStyle: React.CSSProperties = {
+  //   height: "500px",
+  //   lineHeight: "260px",
+  //   textAlign: "center",
+  //   background: "#364d79",
+  // };
 
   return (
     <div className="md:px-20 py-44 green">
@@ -64,8 +64,8 @@ const TheTeam: React.FC = () => {
                 </div>
               </Carousel>
               <Carousel autoplay className={classes.MobileCarousel}>
-                {MobileTeamImages.map((image) => (
-                  <div>
+                {MobileTeamImages.map((image, index) => (
+                  <div key={index}>
                     <div className="flex items-center justify-center space-x-24 my-24">
                       <TeamCard img={image} title="Web Developer" />
                     </div>

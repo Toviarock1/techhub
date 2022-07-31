@@ -69,7 +69,7 @@ const ContactUs = () => {
 
   useEffect(() => {
     if (slug) {
-      setContactForm({ ...contactForm, subject: slug });
+      return setContactForm({ ...contactForm, subject: slug });
     }
   }, [slug]);
 
@@ -169,22 +169,22 @@ const ContactUs = () => {
               <p className={classes.Description}>boiuattechhub@gmail.com</p>
               <ul className="flex justify-center p-0">
                 <li className="px-2">
-                  <a href="#">
+                  <a href="https://www.facebook.com">
                     <FaLinkedin className={"text-black text-xl"} />
                   </a>
                 </li>
                 <li className="px-2">
-                  <a href="#">
+                  <a href="https://www.facebook.com">
                     <FaFacebook className={"text-black text-xl"} />
                   </a>
                 </li>
                 <li className="px-2">
-                  <a href="#">
+                  <a href="https://www.facebook.com">
                     <FaTwitter className={"text-black text-xl"} />
                   </a>
                 </li>
                 <li className="px-2">
-                  <a href="#">
+                  <a href="https://www.facebook.com">
                     <FaInstagram className={"text-black text-xl"} />
                   </a>
                 </li>
@@ -212,7 +212,10 @@ const ContactUs = () => {
         <Modal.Body>
           We've received your message and will get back to you within 24 hours.{" "}
           <br /> In the meantime, make sure to{" "}
-          <a className="no-underline text-green-500" href="#">
+          <a
+            className="no-underline text-green-500"
+            href="https://www.facebook.com"
+          >
             follow us on twitter
           </a>{" "}
           <br />
