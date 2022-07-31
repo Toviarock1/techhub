@@ -12,7 +12,7 @@ import classes from "./Incubation.module.css";
 const Incubation = () => {
   return (
     <div>
-      <div className={`${classes.BackgroundBg} h-120 md:px-20 pt-44`}>
+      <div className={`${classes.BackgroundBg} md:h-120 md:px-20 pt-44`}>
         <Container fluid>
           <div className="text-black mt-20 flex justify-center items-center flex-col">
             <motion.h1
@@ -279,7 +279,7 @@ const Incubation = () => {
             <h2 className="text-5xl font-bold text-center">
               Apply to Our Business Program Today
             </h2>
-            <div className="text-center">
+            <div className="text-center mt-5">
               <Link
                 to="/contact/Application%20to%20join%20BOI-UAT%20Incubation%20Center%20Business%20Program"
                 className={classes.ApplyBtn}
