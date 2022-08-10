@@ -23,7 +23,7 @@ const OurProgram = () => {
   useEffect(() => {
     client
       .fetch(
-        `*[_type == "post"] {
+        `*[_type == "post"] | order(publishedAt asc) {
             title,
             slug,
             body,
