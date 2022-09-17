@@ -69,6 +69,8 @@ const ContactUs = () => {
 
   useEffect(() => {
     if (slug) {
+      setTimeout(() => alert(`please fill the form for your ${slug}`), 1000);
+      alert(`please fill the form for your ${slug}`);
       return setContactForm({ ...contactForm, subject: slug });
     }
   }, [slug]);

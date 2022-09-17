@@ -1,9 +1,9 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 //react-router-dom
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //components
 import Home from "./views/Home";
-import About from "./views/About";
+// import About from "./views/About";
 import Program from "./views/Programs";
 import CoWorkingSpace from "./views/CoWorkingSpace";
 import Contact from "./views/ContactUs";
@@ -16,13 +16,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
 import "./App.css";
 
+
+const About = lazy(() => import("./views/About"));
+// const Incubation = (() => import("./views/Incubation"));
+
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<Suspense fallback={<h1>Still Loading....</h1>}><About /></Suspense>} />
         <Route path="/incubation" element={<Incubation />} />
         <Route path="/programs" element={<Program />} />
         <Route path="/programs/:slug" element={<SingleProgram />} />
