@@ -41,7 +41,11 @@ const SingleProgram = () => {
         <div>
           <h1>{singlePost.title}</h1>
           {singlePost.mainImage && singlePost.mainImage.asset && (
-            <img className="h-80" src={singlePost.mainImage.asset.url} alt="" />
+            <img
+              className="h-80 w-full"
+              src={singlePost.mainImage.asset.url}
+              alt=""
+            />
           )}
           <div className="Content text-xl leading-9">
             <BlockContent
