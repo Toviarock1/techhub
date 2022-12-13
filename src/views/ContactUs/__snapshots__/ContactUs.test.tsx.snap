@@ -131,7 +131,7 @@ exports[`<ContactUS /> should match snapshot 1`] = `
                 class="px-2"
               >
                 <a
-                  href="#"
+                  href="https://www.facebook.com"
                 >
                   <svg
                     class="text-black text-xl"
@@ -153,7 +153,7 @@ exports[`<ContactUS /> should match snapshot 1`] = `
                 class="px-2"
               >
                 <a
-                  href="#"
+                  href="https://www.facebook.com"
                 >
                   <svg
                     class="text-black text-xl"
@@ -175,7 +175,7 @@ exports[`<ContactUS /> should match snapshot 1`] = `
                 class="px-2"
               >
                 <a
-                  href="#"
+                  href="https://www.facebook.com"
                 >
                   <svg
                     class="text-black text-xl"
@@ -197,7 +197,7 @@ exports[`<ContactUS /> should match snapshot 1`] = `
                 class="px-2"
               >
                 <a
-                  href="#"
+                  href="https://www.facebook.com"
                 >
                   <svg
                     class="text-black text-xl"
@@ -229,12 +229,12 @@ exports[`<ContactUS /> should match snapshot 1`] = `
           <p
             class="Description"
           >
-            Obinze, Along Owerri-Port-harcourt Expressway,  Opposite Whitehouse Bus Stop, Owerri, Imo State.
+            BOI-UAT Incubation Centre, Block D, University of africa, toru-orua, Bayelsa State.
           </p>
           <p
             class="Description"
           >
-            Call: +234-703-849-9799
+            Call: +234-813-137-6420
             <br />
             Email: boiuattechhub@gmail.com
           </p>

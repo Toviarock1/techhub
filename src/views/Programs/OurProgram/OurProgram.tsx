@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import React, { useEffect, useState } from 'react';
+import { Container } from 'react-bootstrap';
 //framer-motion
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 //components
-import ProgramsCard from "./../../../components/ProgramsCard/ProgramsCard";
+import ProgramsCard from './../../../components/ProgramsCard/ProgramsCard';
 //sanity client
-import client from "../../../client";
+import client from '../../../client';
 //image
-import Image from "./../../../assets/svgs/image 9.svg";
+import Image from './../../../assets/svgs/image 9.svg';
+import LoadingText from '../../../components/LoadingText/LoadingText';
 
 type ProgramCardProps = {
   title: string;
@@ -51,42 +52,7 @@ const OurProgram = () => {
 
   return loading ? (
     <div className="my-60">
-      <p className="text-center text-3xl">
-        Loading
-        <motion.span
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          transition={{ duration: 1, repeat: Infinity }}
-        >
-          .
-        </motion.span>
-        <motion.span
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
-          .
-        </motion.span>
-        <motion.span
-          initial={{
-            opacity: 0,
-          }}
-          animate={{
-            opacity: 1,
-          }}
-          transition={{ duration: 2, repeat: Infinity }}
-        >
-          .
-        </motion.span>
-      </p>
+      <LoadingText />
     </div>
   ) : posts.length !== 0 ? (
     <div className="md:px-20 py-44">

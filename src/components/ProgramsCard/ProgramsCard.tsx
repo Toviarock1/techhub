@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 //react-bootstrap
-import { Col, Row } from "react-bootstrap";
+import { Col, Row } from 'react-bootstrap';
 //animation
-import { motion, useAnimation } from "framer-motion";
-import { InView, useInView } from "react-intersection-observer";
+import { motion, useAnimation } from 'framer-motion';
+import { InView, useInView } from 'react-intersection-observer';
 //components
-import PrimaryBtn from "../PrimaryBtn/PrimaryBtn";
+import PrimaryBtn from '../PrimaryBtn/PrimaryBtn';
 //css
-import classes from "./ProgramsCard.module.css";
+import classes from './ProgramsCard.module.css';
 
 type ProgramsCardProps = {
   image: string;
@@ -51,16 +51,20 @@ const ProgramsCard = ({
 
   useEffect(() => {
     if (inView) {
-      control.start("visible");
+      control.start('visible');
     }
   }, [control, inView]);
 
   return (
     <div className="mt-16">
-      <Row className={`${flexRowReverse ? "flex flex-row-reverse" : "flex"}`}>
+      <Row
+        className={`${
+          flexRowReverse ? 'flex flex-row-reverse' : 'flex items-center'
+        }`}
+      >
         <Col xs={12} sm={6}>
           <motion.img
-            className="m-auto block"
+            className={`m-auto block ${classes.ProgramImgWrapper}`}
             ref={ref}
             variants={imgVariant}
             initial="hidden"

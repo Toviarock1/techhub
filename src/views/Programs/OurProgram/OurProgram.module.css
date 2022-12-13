@@ -1,5 +1,5 @@
 .Title {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -9,9 +9,13 @@
 }
 
 .Description {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 100;
   font-size: 18px;
   color: #000000;
+}
+
+.ProgramImg {
+  height: 10%;
 }

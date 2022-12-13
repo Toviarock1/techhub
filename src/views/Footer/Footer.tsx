@@ -1,9 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'react-bootstrap';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { links } from './../../shared/utility';
+import Logo from './../../assets/svgs/BOI-UAT-HUB-LOGO-2 1.svg';
 //css
-import classes from "./Footer.module.css";
+import classes from './Footer.module.css';
 
 const Footer = () => {
   return (
@@ -14,7 +16,7 @@ const Footer = () => {
             <div>
               <Row>
                 <Col className="space-y-2">
-                  <div>
+                  {/* <div>
                     <Link to={"/about"} className="text-white no-underline">
                       About us
                     </Link>
@@ -31,7 +33,8 @@ const Footer = () => {
                     >
                       Important info
                     </Link>
-                  </div>
+                  </div> */}
+                  <img src={Logo} alt="" className="w-70" />
                 </Col>
 
                 <Col lg={5} className="">
@@ -42,7 +45,7 @@ const Footer = () => {
                         <Row>
                           <div
                             id="mc_embed_signup"
-                            style={{ background: "transparent" }}
+                            style={{ background: 'transparent' }}
                           >
                             <form
                               action="https://gmail.us14.list-manage.com/subscribe/post?u=f77fdbb78f993eb2d5e4b951f&amp;id=5891acc950"
@@ -59,17 +62,17 @@ const Footer = () => {
                               >
                                 <div
                                   className="mc-field-group text-white"
-                                  style={{ width: "55%" }}
+                                  style={{ width: '55%' }}
                                 >
                                   <label htmlFor="mce-EMAIL">
-                                    Email Address{" "}
+                                    Email Address{' '}
                                   </label>
                                   <input
                                     type="email"
                                     name="EMAIL"
                                     className="required email outline-none text-black"
                                     id="mce-EMAIL"
-                                    style={{ height: "32px" }}
+                                    style={{ height: '32px' }}
                                   />
                                 </div>
 
@@ -82,9 +85,9 @@ const Footer = () => {
                                       id="mc-embedded-subscribe"
                                       className="button"
                                       style={{
-                                        margin: "0px 5px -6px 13px",
-                                        background: "#054814",
-                                        border: "1px solid white",
+                                        margin: '0px 5px -6px 13px',
+                                        background: '#054814',
+                                        border: '1px solid white',
                                       }}
                                     />
                                   </div>
@@ -113,25 +116,25 @@ const Footer = () => {
             <div className="flex justify-end">
               <div className="flex">
                 <div className="px-2">
-                  <a href="https://www.facebook.com">
+                  <a href={links.linkedin}>
                     <FaLinkedin className="text-xl text-white" />
                   </a>
                 </div>
                 <div className="px-2">
-                  <a href="https://www.facebook.com">
+                  <a href={links.facebook}>
                     <FaFacebook className="text-xl text-white" />
                   </a>
                 </div>
                 <div className="px-2">
-                  <a href="https://www.facebook.com">
+                  <a href={links.twitter}>
                     <FaTwitter className="text-xl text-white" />
                   </a>
                 </div>
-                <div className="px-2">
+                {/* <div className="px-2">
                   <a href="https://www.facebook.com">
                     <FaInstagram className="text-xl text-white" />
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </Col>

@@ -4,7 +4,7 @@
 
 body {
   /* background: black; */
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -45,7 +45,7 @@ body {
 .PrimaryBtn {
   display: flex !important;
   align-items: center;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -62,7 +62,7 @@ body {
 }
 
 .Content {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-style: normal;
   font-weight: 500;
   line-height: 19px;
