@@ -1,83 +1,81 @@
 .BackgroundBg {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 30, 5, 0.5)), url("./../../assets/images/incubation.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-color: rgb(0 0 0 / 67%); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 30, 5, 0.5)),
+    url('./../../assets/images/incubation.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgb(0 0 0 / 67%); */
 }
 
 .HeroTitle {
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 85px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: white;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 85px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: white;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .Description {
-    color: white;
-    font-family: "Raleway";
-    line-height: 85px;
-    text-align: center;
-    letter-spacing: -0.02em;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-family: 'Raleway';
+  line-height: 85px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .HeroParagraph {
-    width: 469px;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 160%;
-    letter-spacing: 0.02em;
-    color: #000000;
-    margin-top: 30px;
+  width: 469px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-top: 30px;
 }
 
 .Pros {
-    width: 60%;
-    border-radius: 50px;
+  width: 60%;
+  border-radius: 50px;
 }
 
 .ApplyBtn {
-
-    align-items: center;
-    font-family: "Raleway";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 25px;
-    border-radius: 4px;
-    padding: 1rem 1rem;
-    color: #ffffff;
-    background: #054814;
+  align-items: center;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 25px;
+  border-radius: 4px;
+  padding: 1rem 1rem;
+  color: #ffffff;
+  background: #054814;
 }
 
 .ApplyBtn:hover {
-    background-color: #1a5d22;
-    border: 1px solid #054b14;
-    color: white;
+  background-color: #1a5d22;
+  border: 1px solid #054b14;
+  color: white;
 }
 
-
-
 @media screen and (max-width: 640px) {
-    .HeroTitle {
-        font-size: 54px;
-    }
+  .HeroTitle {
+    font-size: 54px;
+  }
 }
 
 @media screen and (max-width: 700px) {
-    .Pros {
-        width: 100%;
-    }
+  .Pros {
+    width: 100%;
+  }
 
-    .ApplyBtn {
-        padding: 0.5rem 3rem;
-    }
+  .ApplyBtn {
+    padding: 0.5rem 3rem;
+  }
 }

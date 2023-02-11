@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { motion, useAnimation } from "framer-motion";
-import { useInView, InView } from "react-intersection-observer";
+import React, { useEffect } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView, InView } from 'react-intersection-observer';
 //css
-import classes from "./Services.module.css";
+import classes from './Services.module.css';
 //images
-import TrainingImage from "./../../../assets/svgs/Rectangle 15.svg";
-import CoWorkingSpaceImage from "./../../../assets/svgs/Rectangle 19.svg";
-import IncubationImage from "./../../../assets/svgs/Rectangle 20.svg";
-import TechMeetUpImage from "./../../../assets/svgs/Rectangle 21.svg";
+import TrainingImage from './../../../assets/svgs/Rectangle 15.svg';
+import CoWorkingSpaceImage from './../../../assets/images/IMG_1643.jpg';
+import IncubationImage from './../../../assets/svgs/Rectangle 20.svg';
+import TechMeetUpImage from './../../../assets/images/IMG_1636.jpg';
 
 const Services = () => {
   const control = useAnimation();
@@ -25,11 +25,11 @@ const Services = () => {
 
   useEffect(() => {
     if (inView) {
-      control.start("visible");
+      control.start('visible');
     }
   }, [control, inView]);
   return (
-    <div className="bg-white md:px-20 py-30 pb-48">
+    <div className="bg-white md:px-20 py-30 pb-48" id={classes.Services}>
       <Container>
         <div>
           <div className="text-center mb-24">
@@ -54,7 +54,7 @@ const Services = () => {
                   ref={ref}
                   variants={serviceTextVariant}
                   transition={{ duration: 2 }}
-                  initial={"hidden"}
+                  initial={'hidden'}
                   animate={control}
                   className={classes.TrainingTitle}
                 >
@@ -80,7 +80,7 @@ const Services = () => {
                   ref={ref}
                   variants={serviceTextVariant}
                   transition={{ duration: 2 }}
-                  initial={"hidden"}
+                  initial={'hidden'}
                   animate={control}
                   className={classes.TrainingTitle}
                 >
@@ -106,7 +106,7 @@ const Services = () => {
                   ref={ref}
                   variants={serviceTextVariant}
                   transition={{ duration: 2 }}
-                  initial={"hidden"}
+                  initial={'hidden'}
                   animate={control}
                   className={classes.TrainingTitle}
                 >
@@ -132,7 +132,7 @@ const Services = () => {
                   ref={ref}
                   variants={serviceTextVariant}
                   transition={{ duration: 2 }}
-                  initial={"hidden"}
+                  initial={'hidden'}
                   animate={control}
                   className={classes.TrainingTitle}
                 >

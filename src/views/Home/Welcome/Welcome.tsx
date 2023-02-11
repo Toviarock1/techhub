@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { motion, useAnimation } from "framer-motion";
-import { InView, useInView } from "react-intersection-observer";
-import PrimaryBtn from "./../../../components/PrimaryBtn/PrimaryBtn";
-import WelcomeImage from "./../../../assets/svgs/Rectangle 10.svg";
-import classes from "./Welcome.module.css";
+import React, { useEffect } from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
+import { motion, useAnimation } from 'framer-motion';
+import { InView, useInView } from 'react-intersection-observer';
+import PrimaryBtn from './../../../components/PrimaryBtn/PrimaryBtn';
+import WelcomeImage from './../../../assets/images/2022-12-09 1.48.01 PM.jpeg';
+import classes from './Welcome.module.css';
 
 const Welcome = () => {
   const control = useAnimation();
@@ -36,7 +36,7 @@ const Welcome = () => {
 
   useEffect(() => {
     if (inView) {
-      control.start("visible");
+      control.start('visible');
     }
   }, [control, inView]);
 
@@ -47,12 +47,12 @@ const Welcome = () => {
           <Row>
             <Col xs={12} sm={6}>
               <h2 className={classes.MobileWelcomeTitle}>
-                Welcome to BOI-UAT Incubation Hub.{" "}
+                Welcome to BOI-UAT Incubation Hub.{' '}
               </h2>
               <motion.img
                 ref={ref}
                 src={WelcomeImage}
-                className="m-auto block"
+                className="m-auto block rounded-xl"
                 alt="Tech hub working space"
                 variants={welcomeImgVariant}
                 initial="hidden"
@@ -69,7 +69,7 @@ const Welcome = () => {
                 className={classes.WelcomeTitle}
               >
                 Welcome to <br />
-                BOI-UAT Incubation Hub.{" "}
+                BOI-UAT Incubation Hub.{' '}
               </motion.h2>
               <motion.p
                 variants={welcomeTextVariant}

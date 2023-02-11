@@ -1,21 +1,21 @@
-import React, { useEffect } from "react";
-import { Container } from "react-bootstrap";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import classes from "./HomeHero.module.css";
+import React, { useEffect } from 'react';
+import { Container } from 'react-bootstrap';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import classes from './HomeHero.module.css';
 
 const HomeHero = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
 
   const heroVariant = {
-    visible: { opacity: 1, x: "10px" },
+    visible: { opacity: 1, x: '10px' },
     hidden: { opacity: 0, x: 0 },
   };
 
   useEffect(() => {
     if (inView) {
-      control.start("visible");
+      control.start('visible');
     }
   }, [control, inView]);
   return (
